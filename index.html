@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário, Charlie!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .messages {
+      margin: 40px auto;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .messages h2 {
+      margin-bottom: 15px;
+      color: #c0392b;
+    }
+
+    .messages p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin: 50px 0 20px;
+      font-size: 1rem;
+      color: white;
+      opacity: 0.9;
+    }
+
+    /* Animação de confetes */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      top: -10px;
+      animation: fall 5s linear infinite;
+      border-radius: 50%;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(720deg);
+      }
+    }
+
+     .roast {
+    margin: 40px auto;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .roast-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #e63973;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .roast-buttons button:hover {
+    transform: scale(1.05);
+  }
+
+  #piada-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fce4ec;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  </style>
+</head>
+<body>
+
+  <header>🎉 Feliz Aniversário, Charlie! 🎂</header>
+
+
+
+  <section class="messages">
+    <h2>Mensagens para você</h2>
+    <p>Charlie, hoje é um dia especial, e eu só quero te desejar toda felicidade do mundo.</p>
+    <p>Posso não ser a melhor pessoa do mundo, posso ser chato e teimoso muitas vezes, e posso muitas vezes estragar tudo.</p>
+    <p>Mas saiba que eu nunca fiz por mal, sou horrivel com esse tipo de coisa, mas toda felicidade do mundo Charlie.</p>
+
+<button id="btn1">PTBR</button>
+<button id="btn2" style="display:none;">EN</button>
+
+<audio id="music1" loop>
+  <source src="BRILHO - HUNTRIX Música Completa ｜ Guerreiras do KPOP⧸ Demons Hunters - Golden Brazilian Version.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="music2" loop>
+  <source src="“Golden” Official Lyric Video ｜ KPop Demon Hunters ｜ Sony Animation.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const btn1 = document.getElementById("btn1");
+  const btn2 = document.getElementById("btn2");
+  const music1 = document.getElementById("music1");
+  const music2 = document.getElementById("music2");
+
+  btn1.addEventListener("click", () => {
+    music2.pause();
+    music2.currentTime = 0;
+    music1.play();
+    btn1.style.display = "none";
+    btn2.style.display = "inline-block";
+  });
+
+  btn2.addEventListener("click", () => {
+    music1.pause();
+    music1.currentTime = 0;
+    music2.play();
+    btn2.style.display = "none";
+    btn1.style.display = "inline-block";
+  });
+</script>
+
+  </section>
+
+  <section class="gallery">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg" alt="Imagem 1">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg" alt="Imagem 2">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/FiddleSticks_0.jpg" alt="Imagem 3">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg" alt="Imagem 4">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg" alt="Imagem 5">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg" alt="Imagem 6">
+    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg" alt="Imagem 6">
+    <img src="https://i.redd.it/am48tdg0nttb1.jpg" alt="Imagem 7">
+  </section>
+
+
+  <section class="roast">
+  <h2>Que tal uma piada?</h2>
+  <p>Clique em um botão e veja a piada de cada um</p>
+  
+  <div class="roast-buttons">
+    <button onclick="mostrarPiada('Elias')">???</button>
+    <button onclick="mostrarPiada('Leozinho')">???</button>
+    <button onclick="mostrarPiada('Kevin')">???</button>
+    <button onclick="mostrarPiada('Artic')">???</button>
+    <button onclick="mostrarPiada('Jeff')">???</button>
+    <button onclick="mostrarPiada('Deiling')">???</button>
+    <button onclick="mostrarPiada('Charlie')">???</button>
+  </div>
+
+  <div id="piada-box">
+    <p id="piada-text">Clique em um botão acima para ver a piada 😅</p>
+  </div>
+</section>
+  
+  <footer>
+    Feito com todo carinho do seu amigo Ramos ❤️
+  </footer>
+
+  <script>
+    // Gerar confetes aleatórios
+    function createConfetti() {
+      const confetti = document.createElement("div");
+      confetti.classList.add("confetti");
+      document.body.appendChild(confetti);
+
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+      confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+
+      setTimeout(() => confetti.remove(), 5000);
+    }
+
+    setInterval(createConfetti, 200);
+
+
+  function mostrarPiada(nome) {
+    const piadas = {
+      "Elias": "Obrigado Elias, por ser o meu unico e melhor primo que eu já tive na vida.",
+      "Leozinho": "Obrigado Leozinho, por me oferecer uma excelente companhia no terraria(Tem que voltar a jogar por sinal)",
+      "Kevin": "Obrigado Kevin, por sempre você estar do meu lado, mesmo quando eu estou errado.",
+      "Artic": "Obrigado Arthur, por sempre poder confiar em mim, quando você mais precisa.",
+      "Jeff": "Obrigado Jeff, por sempre fazer seus exceles comentarios",
+      "Deiling": "Obrigado Deiling, por sempre cuidar do Charlie",
+      "Charlie": "O que é, o que é? Faz a melhor mesa que eu já vi na vida? E da sermão nos outros quando precisa? Charlie, você é tão especial que até as piadas são poucas para descrever o quanto você é incrível! Feliz aniversário!",
+    };
+
+    document.getElementById("piada-text").innerText = piadas[nome] || "Sem piada ainda!";
+  }
+  </script>
+</body>
+</html>
